@@ -29,3 +29,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+/**
+ * Merchant Route
+ */
+Route::prefix('merchant/')->name('merchant.')->group( function () {
+    Route::view('/','merchant.index')->name('index');
+});
