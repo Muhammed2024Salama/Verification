@@ -26,14 +26,14 @@
                         autofocus
                     />
                     @error('name')
-                    <span class="text-danger">{{ $message }}</span>
+                        <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
                     @error('email')
-                    <span class="text-danger">{{ $message }}</span>
+                        <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mb-3 form-password-toggle">
@@ -48,7 +48,7 @@
                             aria-describedby="password"
                         />
                         @error('password')
-                        <span class="text-danger">{{ $message }}</span>
+                            <span class="text-danger">{{ $message }}</span>
                         @enderror
                         <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                     </div>

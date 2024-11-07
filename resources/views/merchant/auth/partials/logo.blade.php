@@ -1,6 +1,6 @@
 <!-- Logo -->
 <div class="app-brand justify-content-center">
-    <a href="index.html" class="app-brand-link gap-2">
+    <a href="{{ route('merchant.index') }}" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                     <svg
                         width="25"
@@ -56,7 +56,7 @@
                       </g>
                     </svg>
                   </span>
-        <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
+        <span class="app-brand-text demo text-body fw-bolder">{{ config('app.name') }}</span>
     </a>
 </div>
 <!-- /Logo -->
