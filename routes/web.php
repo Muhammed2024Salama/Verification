@@ -35,7 +35,7 @@ require __DIR__.'/auth.php';
  */
 Route::prefix('merchant/')->name('merchant.')->group( function () {
 
-    Route::middleware(['merchant'])->group(function () {
+    Route::middleware(['merchant', 'merchantVerified'])->group(function () {
         Route::view('/','merchant.index')->name('index');
     });
 
